@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Computer extends Model
 {
-    //
+    public function apprentice(){
+        return $this->hasone('App\Models\Apprentice');
+    }
+
+ 
+
 }
